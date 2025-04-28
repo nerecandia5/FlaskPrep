@@ -13,3 +13,8 @@ def Hola_chau():
 @app.route("/partido") 
 def River_Boca():
     return "<p> River, Boca!</p>"
+
+@app.route("/partido/<string:e1>/<string:e2>")
+def partido (e1,e2):
+    return f"{e1} vs {e2}"
+
